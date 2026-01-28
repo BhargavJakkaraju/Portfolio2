@@ -1,0 +1,36 @@
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  padding-top: 100px;
+}
+
+.heroContent {
+  text-align: center;
+  max-width: 1200px;
+}
+
+.heroTitle {
+  font-size: 4rem;
+  font-weight: 700;
+  color: #000000;
+  line-height: 1.2;
+}
+
+.name {
+  color: #2563eb;
+}
+
+@media (max-width: 768px) {
+  .heroTitle {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .heroTitle {
+    font-size: 2rem;
+  }
+}
