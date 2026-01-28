@@ -40,8 +40,10 @@ export default function Navigation({ isScrolled }: NavigationProps) {
 
   return (
     <nav className={`${styles.navbar} ${isScrolled ? styles.scrolled : ''}`}>
-      <div className={styles.navContainer}>
-        <ul className={styles.navLinks}>
+      <div className={styles.navContainerWrapper}>
+        <div className={styles.navContainer}>
+          <div className={styles.navContainerInner}>
+            <ul className={styles.navLinks}>
           <li>
             <a
               href="#about"
@@ -90,7 +92,9 @@ export default function Navigation({ isScrolled }: NavigationProps) {
               Contact Me
             </a>
           </li>
-        </ul>
+            </ul>
+          </div>
+        </div>
       </div>
     </nav>
   )

@@ -12,25 +12,99 @@
   max-width: 1200px;
 }
 
-.heroTitle {
+.greeting {
   font-size: 4rem;
   font-weight: 700;
   color: #000000;
   line-height: 1.2;
+  margin-bottom: 0.75rem;
 }
 
 .name {
   color: #2563eb;
 }
 
+.subGreeting {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: #000000;
+  line-height: 1.4;
+  min-height: 1.2em;
+}
+
+.typingText {
+  color: #2563eb;
+}
+
+.cursor {
+  color: #2563eb;
+  animation: blink 1s step-end infinite;
+  margin-left: 2px;
+}
+
+.iconLinks {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.iconLink {
+  color: #000000;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.iconLink:hover {
+  color: #2563eb;
+  transform: translateY(-2px);
+}
+
+.icon {
+  width: 28px;
+  height: 28px;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
 @media (max-width: 768px) {
-  .heroTitle {
+  .hero {
+    padding-top: 100px;
+  }
+
+  .greeting {
     font-size: 2.5rem;
+  }
+
+  .subGreeting {
+    font-size: 1.35rem;
+  }
+
+  .icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .iconLinks {
+    gap: 1.25rem;
+    margin-top: 1.25rem;
   }
 }
 
 @media (max-width: 480px) {
-  .heroTitle {
+  .greeting {
     font-size: 2rem;
+  }
+
+  .subGreeting {
+    font-size: 1.15rem;
+  }
+
+  .icon {
+    width: 22px;
+    height: 22px;
   }
 }

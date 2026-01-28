@@ -7,13 +7,12 @@ export default function About() {
         <h2 className={styles.sectionTitle}>About Me</h2>
         <div className={styles.content}>
           <p className={styles.text}>
-            Welcome to my portfolio! I'm passionate about creating innovative solutions
-            and bringing ideas to life through technology. This is where you can learn
-            more about my background, skills, and what drives me.
+            I&apos;m a software engineer in training who loves working at the intersection of AI, web development, and data systems.
+            From developing full-stack applications to integrating machine learning pipelines, I am always open to learning new skills.
           </p>
           <p className={styles.text}>
-            Feel free to explore my work and reach out if you'd like to connect or
-            collaborate on a project.
+            I&apos;m a Software Engineering student at San José State University, where I&apos;m strengthening my
+            foundation through courses in Data Structures, Object-Oriented Design, and Operating Systems.
           </p>
         </div>
       </div>
