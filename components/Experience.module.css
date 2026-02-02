@@ -190,6 +190,14 @@
   line-height: 1.7;
 }
 
+.goldGradient {
+  background: linear-gradient(135deg, #996600, #cc9900, #996600);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: 700;
+}
+
 @media (max-width: 768px) {
   .sectionTitle {
     font-size: 2rem;
