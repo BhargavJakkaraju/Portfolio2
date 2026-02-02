@@ -11,9 +11,10 @@ const inconsolata = Inconsolata({
 
 const PHRASES = [
   'an aspiring software engineer',
-  'a software engineering student at San Jose State University',
+  'a software engineering student at San José State University',
   'interested in fullstack development',
   'looking for internship opportunities',
+  'always looking to connect with new people!'
 ]
 
 const TYPING_SPEED = 60
