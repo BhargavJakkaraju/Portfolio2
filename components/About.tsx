@@ -1,3 +1,5 @@
+import Image from 'next/image'
+import TechIconsMarquee from './TechIconsMarquee'
 import styles from './About.module.css'
 
 export default function About() {
@@ -5,15 +7,36 @@ export default function About() {
     <section id="about" className={styles.about}>
       <div className={styles.container}>
         <h2 className={styles.sectionTitle}>About Me</h2>
-        <div className={styles.content}>
-          <p className={styles.text}>
-            I&apos;m a software engineer in training who loves working at the intersection of AI, web development, and data systems.
-            From developing full-stack applications to integrating machine learning pipelines, I am always open to learning new skills.
-          </p>
-          <p className={styles.text}>
-            I&apos;m a Software Engineering student at San José State University, where I&apos;m strengthening my
-            foundation through courses in Data Structures, Object-Oriented Design, and Operating Systems.
-          </p>
+        <div className={styles.contentRow}>
+          <div className={styles.content}>
+            <p className={styles.text}>
+            Hi! My name is Bhargav Jakkaraju and I am currently studying Software Engineering at San Jose State University.
+            </p>
+            <p className={styles.text}>
+            I am Interested in fullstack development, AI/ML Integration, Backend Systems, and Dev Tools. I’m always open to learning new things and meeting new people so feel free to reach out!
+            </p>
+            <a
+              href="#contact"
+              className={styles.reachOutLink}
+              onClick={(e) => {
+                e.preventDefault()
+                document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+              }}
+            >
+              Reach Out!
+            </a>
+          </div>
+          <div className={styles.logoWrapper}>
+            <Image
+              src="/logo.png"
+              alt="Bhargav Jakkaraju"
+              width={360}
+              height={360}
+              className={styles.logo}
+              priority
+            />
+            <TechIconsMarquee />
+          </div>
         </div>
       </div>
     </section>
