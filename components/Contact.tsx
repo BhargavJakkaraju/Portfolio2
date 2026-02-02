@@ -13,20 +13,20 @@ export default function Contact() {
           <div className={styles.contactInfo}>
             <div className={styles.contactItem}>
               <h3 className={styles.contactLabel}>Email</h3>
-              <a href="mailto:your.email@example.com" className={styles.contactLink}>
-                your.email@example.com
+              <a href="mailto:Bhargav.Jakkaraju@sjsu.edu" className={styles.contactLink}>
+                Bhargav.Jakkaraju@sjsu.edu
               </a>
             </div>
             <div className={styles.contactItem}>
               <h3 className={styles.contactLabel}>LinkedIn</h3>
-              <a href="#" className={styles.contactLink}>
-                linkedin.com/in/yourprofile
+              <a href="http://linkedin.com/in/bhargavjakkaraju06" className={styles.contactLink}>
+                linkedin.com/in/bhargavjakkaraju06
               </a>
             </div>
             <div className={styles.contactItem}>
               <h3 className={styles.contactLabel}>GitHub</h3>
-              <a href="#" className={styles.contactLink}>
-                github.com/yourusername
+              <a href="http://github.com/bhargavjakkaraju" className={styles.contactLink}>
+                github.com/bhargavjakkaraju
               </a>
             </div>
           </div>
