@@ -33,6 +33,121 @@
   margin: 0 auto;
 }
 
+.githubActivity {
+  margin-top: 3rem;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.githubActivityTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #000000;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.githubChartCardWrapper {
+  transition: transform 0.3s ease;
+}
+
+.githubChartCardWrapper:hover {
+  transform: scale(1.05);
+}
+
+.githubChartCard {
+  --deg: 0deg;
+  position: relative;
+  padding: 2px;
+  border-radius: 12px;
+  isolation: isolate;
+}
+
+.githubChartCard::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  padding: 2px;
+  box-sizing: border-box;
+  border-radius: 12px;
+  background: conic-gradient(from var(--deg),
+      #60a5fa,
+      #2563eb,
+      #3b82f6,
+      #60a5fa);
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  z-index: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.githubChartCardWrapper:hover .githubChartCard::before {
+  opacity: 1;
+  animation: projectRotateDeg 5s linear infinite;
+}
+
+.githubChartCard::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  padding: 2px;
+  box-sizing: border-box;
+  border-radius: 12px;
+  background: conic-gradient(from var(--deg),
+      #60a5fa,
+      #2563eb,
+      #3b82f6,
+      #60a5fa);
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  filter: blur(8px);
+}
+
+.githubChartCardWrapper:hover .githubChartCard::after {
+  opacity: 0.5;
+  animation: projectRotateDeg 5s linear infinite;
+}
+
+.githubChartInner {
+  position: relative;
+  z-index: 2;
+  background-color: rgba(240, 235, 224, 0.98);
+  border-radius: 10px;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: inherit;
+}
+
+.githubCalendar {
+  font-family: inherit;
+  width: 100%;
+}
+
+.githubChartInner .githubCalendar,
+.githubChartInner .githubCalendar svg,
+.githubChartInner .githubCalendar text {
+  font-family: inherit;
+}
+
 .cardWrapper {
   transition: transform 0.3s ease;
 }

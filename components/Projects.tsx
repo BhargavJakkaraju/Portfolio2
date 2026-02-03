@@ -1,7 +1,13 @@
 'use client'
 
 import { useState } from 'react'
+import { GitHubCalendar } from 'react-github-calendar'
 import styles from './Projects.module.css'
+
+const githubCalendarTheme = {
+  light: ['#e8e6e1', '#93c5fd', '#60a5fa', '#3b82f6', '#2563eb'],
+  dark: ['#161b22', '#1e3a5f', '#2563eb', '#3b82f6', '#60a5fa'],
+}
 
 const LUMENTA_SHORT = 'An AI-powered video surveillance platform for real-time monitoring.'
 const LUMENTA_FULL = 'An AI-powered video surveillance platform that monitors multiple camera feeds in real time to detect and respond to security incidents, safety hazards, and notable events. It uses computer vision and AI to analyze both live and recorded video, identifying objects, people, vehicles, and activities across a wide range of environments.'
@@ -97,6 +103,21 @@ export default function Projects() {
                 <div className={styles.projectLinks}>
                   <a href="https://github.com/BhargavJakkaraju/Interviewer" className={styles.link} target="_blank" rel="noopener noreferrer">GitHub</a>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className={styles.githubActivity}>
+          <h3 className={styles.githubActivityTitle}>My GitHub Activity!</h3>
+          <div className={styles.githubChartCardWrapper}>
+            <div className={styles.githubChartCard}>
+              <div className={styles.githubChartInner}>
+                <GitHubCalendar
+                  username="bhargavjakkaraju"
+                  theme={githubCalendarTheme}
+                  colorScheme="light"
+                  className={styles.githubCalendar}
+                />
               </div>
             </div>
           </div>

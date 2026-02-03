@@ -66,7 +66,7 @@ export default function Hero() {
         </h2>
         <div className={styles.iconLinks}>
           <a
-            href="https://www.linkedin.com/in/yourprofile"
+            href="https://www.linkedin.com/in/bhargavjakkaraju06"
             target="_blank"
             rel="noopener noreferrer"
             className={styles.iconLink}
@@ -77,7 +77,7 @@ export default function Hero() {
             </svg>
           </a>
           <a
-            href="mailto:your.email@example.com"
+            href="mailto:bhargav.jakkaraju@sjsu.edu"
             className={styles.iconLink}
             aria-label="Email"
           >
@@ -86,7 +86,7 @@ export default function Hero() {
             </svg>
           </a>
           <a
-            href="https://github.com/yourusername"
+            href="https://github.com/bhargavjakkaraju"
             target="_blank"
             rel="noopener noreferrer"
             className={styles.iconLink}
