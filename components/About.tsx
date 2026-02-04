@@ -13,7 +13,7 @@ export default function About() {
             Hi! My name is Bhargav Jakkaraju and I am currently studying Software Engineering at San Jose State University.
             </p>
             <p className={styles.text}>
-            I am Interested in fullstack development, AI/ML Integration, Backend Systems, and Dev Tools. I’m always open to learning new things and meeting new people so feel free to reach out!
+            I am interested in fullstack development, AI/ML Integration, Backend Systems, and Dev Tools. I’m always open to learning new things and meeting new people so feel free to reach out!
             </p>
             <a
               href="#contact"
