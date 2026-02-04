@@ -13,7 +13,7 @@ export default function Contact() {
           <div className={styles.contactInfo}>
             <div className={styles.contactItem}>
               <h3 className={styles.contactLabel}>Email</h3>
-              <a href="mailto:Bhargav.Jakkaraju@sjsu.edu" className={styles.contactLink} target="_blank" rel="noopener noreferrer">
+              <a href="mailto:bhargav.jakkaraju@sjsu.edu" className={styles.contactLink} target="_blank" rel="noopener noreferrer">
                 Bhargav.Jakkaraju@sjsu.edu
               </a>
             </div>

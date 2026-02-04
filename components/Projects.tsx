@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { GitHubCalendar } from 'react-github-calendar'
 import styles from './Projects.module.css'
 
@@ -22,6 +22,11 @@ export default function Projects() {
   const [lumentaExpanded, setLumentaExpanded] = useState(false)
   const [aideExpanded, setAideExpanded] = useState(false)
   const [landlyExpanded, setLandlyExpanded] = useState(false)
+  const [calendarMounted, setCalendarMounted] = useState(false)
+
+  useEffect(() => {
+    setCalendarMounted(true)
+  }, [])
 
   return (
     <section id="projects" className={styles.projects}>
@@ -112,12 +117,18 @@ export default function Projects() {
           <div className={styles.githubChartCardWrapper}>
             <div className={styles.githubChartCard}>
               <div className={styles.githubChartInner}>
-                <GitHubCalendar
-                  username="bhargavjakkaraju"
-                  theme={githubCalendarTheme}
-                  colorScheme="light"
-                  className={styles.githubCalendar}
-                />
+                {calendarMounted ? (
+                  <GitHubCalendar
+                    username="bhargavjakkaraju"
+                    theme={githubCalendarTheme}
+                    colorScheme="light"
+                    className={styles.githubCalendar}
+                  />
+                ) : (
+                  <div className={styles.githubCalendarPlaceholder} aria-hidden>
+                    Loading GitHub activity…
+                  </div>
+                )}
               </div>
             </div>
           </div>
