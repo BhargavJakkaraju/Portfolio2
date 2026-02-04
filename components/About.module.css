@@ -39,6 +39,17 @@
   margin-top: -2rem;
 }
 
+.logoLink {
+  display: block;
+  text-decoration: none;
+  line-height: 0;
+  transition: opacity 0.2s ease;
+}
+
+.logoLink:hover {
+  opacity: 0.9;
+}
+
 .logo {
   width: 100%;
   height: auto;

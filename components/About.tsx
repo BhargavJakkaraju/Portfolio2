@@ -27,14 +27,22 @@ export default function About() {
             </a>
           </div>
           <div className={styles.logoWrapper}>
-            <Image
-              src="/logo.png"
-              alt="Bhargav Jakkaraju"
-              width={360}
-              height={360}
-              className={styles.logo}
-              priority
-            />
+            <a
+              href="https://www.sjsu.edu"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.logoLink}
+              aria-label="San José State University"
+            >
+              <Image
+                src="/logo.png"
+                alt="San José State University"
+                width={360}
+                height={360}
+                className={styles.logo}
+                priority
+              />
+            </a>
             <TechIconsMarquee />
           </div>
         </div>
