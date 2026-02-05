@@ -12,7 +12,7 @@ const EXPERIENCES = [
   },
   {
     jobTitle: 'Software Development Intern',
-    company: 'eAlliance Corportation',
+    company: 'eAlliance Corporation',
     duration: 'June 2025 - August 2025',
     overlayTitle: 'Focus',
     overlayText: (
