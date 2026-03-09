@@ -113,7 +113,7 @@ export default function Projects() {
           </div>
         </div>
         <div className={styles.githubActivity}>
-          <h3 className={styles.githubActivityTitle}>My GitHub Activity!</h3>
+          <h3 className={styles.githubActivityTitle}>My GitHub Activity</h3>
           <div className={styles.githubChartCardWrapper}>
             <div className={styles.githubChartCard}>
               <div className={styles.githubChartInner}>

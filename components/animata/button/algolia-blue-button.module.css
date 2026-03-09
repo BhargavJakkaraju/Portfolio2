@@ -1,0 +1,57 @@
+.button {
+  position: relative;
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+  overflow: hidden;
+  border: 0;
+  border-radius: 0.5rem;
+  background: linear-gradient(to right, #0ea5e9, #2563eb);
+  color: #ffffff;
+  text-decoration: none;
+  box-shadow:
+    rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px,
+    rgba(58, 65, 111, 0.5) 0 -3px 0 inset;
+  transition: transform 150ms ease-in-out, box-shadow 150ms ease-in-out;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+  box-shadow:
+    rgba(45, 35, 66, 0.4) 0 4px 8px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px,
+    #3c4fe0 0 -3px 0 inset;
+}
+
+.button:focus-visible {
+  outline: none;
+  box-shadow:
+    #3c4fe0 0 0 0 1.5px inset,
+    rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px,
+    #3c4fe0 0 -3px 0 inset;
+}
+
+.button:active {
+  transform: translateY(2px);
+  box-shadow: #3c4fe0 0 3px 7px inset;
+}
+
+@media (max-width: 768px) {
+  .button {
+    width: 2.75rem;
+    height: 2.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .button {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}

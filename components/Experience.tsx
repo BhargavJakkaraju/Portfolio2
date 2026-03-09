@@ -8,7 +8,7 @@ const EXPERIENCES = [
     company: 'Geico',
     duration: 'Summer 2026',
     overlayTitle: 'Focus',
-    overlayText: 'Incoming Software Engineer Intern for Summer 2026!',
+    overlayText: 'Incoming Software Engineer Intern for Summer 2026',
   },
   {
     jobTitle: 'Software Development Intern',
