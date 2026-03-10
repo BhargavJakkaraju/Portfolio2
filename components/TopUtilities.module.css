@@ -1,0 +1,80 @@
+.timeContainer,
+.toggleContainer {
+  position: fixed;
+  top: 1.25rem;
+  z-index: 1200;
+}
+
+.timeContainer {
+  left: 1.5rem;
+}
+
+.toggleContainer {
+  right: 1.5rem;
+}
+
+.pill {
+  display: inline-flex;
+  padding: 0.4rem 0.9rem;
+}
+
+.timeText {
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  color: var(--color-text);
+}
+
+.toggleButton {
+  border: none;
+  background: transparent;
+  color: var(--color-text);
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  letter-spacing: 0.02em;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.toggleButton:focus-visible {
+  outline: 2px solid var(--color-link);
+  outline-offset: 3px;
+  border-radius: 999px;
+}
+
+.toggleIcon {
+  display: inline-flex;
+  width: 1.15rem;
+  height: 1.15rem;
+}
+
+.toggleIcon svg {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .timeContainer,
+  .toggleContainer {
+    top: 0.85rem;
+  }
+
+  .timeContainer {
+    left: 0.85rem;
+  }
+
+  .toggleContainer {
+    right: 0.85rem;
+  }
+
+  .pill {
+    padding: 0.35rem 0.7rem;
+  }
+
+  .timeText,
+  .toggleButton {
+    font-size: 0.85rem;
+  }
+}

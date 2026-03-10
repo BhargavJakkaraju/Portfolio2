@@ -15,29 +15,29 @@
 .greeting {
   font-size: 4rem;
   font-weight: 700;
-  color: #000000;
+  color: var(--color-text);
   line-height: 1.2;
   margin-bottom: 0.75rem;
 }
 
 .name {
-  color: #2563eb;
+  color: var(--color-link);
 }
 
 .subGreeting {
   font-size: 1.75rem;
   font-weight: 600;
-  color: #000000;
+  color: var(--color-text);
   line-height: 1.4;
   min-height: 1.2em;
 }
 
 .typingText {
-  color: #2563eb;
+  color: var(--color-link);
 }
 
 .cursor {
-  color: #2563eb;
+  color: var(--color-link);
   animation: blink 1s step-end infinite;
   margin-left: 2px;
 }
@@ -69,7 +69,7 @@
 .icon {
   width: 1.55rem;
   height: 1.55rem;
-  color: #2563eb;
+  color: var(--color-link);
 }
 
 @keyframes blink {

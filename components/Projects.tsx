@@ -19,7 +19,11 @@ const AIDE_FULL = 'An AI-powered water safety platform that continuously monitor
 const LANDLY_SHORT = 'A modern, full-stack web application that helps developers prepare for technical interviews using AI-generated questions and explanations.'
 const LANDLY_FULL = 'A modern, full-stack web application that helps developers prepare for technical interviews using AI-generated questions and explanations. Create personalized interview prep sessions tailored to your role, experience level, and topics you want to focus on.'
 
-export default function Projects() {
+type ProjectsProps = {
+  isDark?: boolean
+}
+
+export default function Projects({ isDark = false }: ProjectsProps) {
   const [lumentaExpanded, setLumentaExpanded] = useState(false)
   const [aideExpanded, setAideExpanded] = useState(false)
   const [landlyExpanded, setLandlyExpanded] = useState(false)
@@ -162,7 +166,7 @@ export default function Projects() {
                   <GitHubCalendar
                     username="bhargavjakkaraju"
                     theme={githubCalendarTheme}
-                    colorScheme="light"
+                    colorScheme={isDark ? 'dark' : 'light'}
                     className={styles.githubCalendar}
                   />
                 ) : (

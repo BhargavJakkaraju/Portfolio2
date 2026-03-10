@@ -14,7 +14,7 @@
 .sectionTitle {
   font-size: 3rem;
   font-weight: 700;
-  color: #000000;
+  color: var(--color-text);
   margin-bottom: 2rem;
   text-align: left;
 }
@@ -60,7 +60,7 @@
 
 .text {
   font-size: 1.2rem;
-  color: #000000;
+  color: var(--color-text);
   margin-bottom: 1.5rem;
   line-height: 1.8;
 }
@@ -71,7 +71,7 @@
   font-weight: 700;
   padding: 0.45rem 0.85rem;
   text-decoration: none;
-  color: #2563eb;
+  color: var(--color-link);
   transition: transform 0.2s ease;
 }
 
