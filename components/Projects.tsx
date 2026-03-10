@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import { GitHubCalendar } from 'react-github-calendar'
+import GlassSurface from './GlassSurface'
 import styles from './Projects.module.css'
 
 const githubCalendarTheme = {
@@ -34,7 +35,17 @@ export default function Projects() {
         <h2 className={styles.sectionTitle}>Projects</h2>
         <div className={styles.projectsGrid}>
           <div className={styles.cardWrapper}>
-            <div className={styles.projectCard}>
+            <GlassSurface
+              width="100%"
+              height="auto"
+              borderRadius={16}
+              backgroundOpacity={0.22}
+              saturation={1.6}
+              blur={18}
+              displace={0.9}
+              distortionScale={-220}
+              className={styles.projectGlass}
+            >
               <div className={styles.projectCardInner}>
                 <div className={styles.projectTitleRow}>
                   <h3 className={styles.projectTitle}>Lumenta</h3>
@@ -60,10 +71,20 @@ export default function Projects() {
                   <a href="https://github.com/BhargavJakkaraju/Lumenta" className={styles.link} target="_blank" rel="noopener noreferrer">GitHub</a>
                 </div>
               </div>
-            </div>
+            </GlassSurface>
           </div>
           <div className={styles.cardWrapper}>
-            <div className={styles.projectCard}>
+            <GlassSurface
+              width="100%"
+              height="auto"
+              borderRadius={16}
+              backgroundOpacity={0.22}
+              saturation={1.6}
+              blur={18}
+              displace={0.9}
+              distortionScale={-220}
+              className={styles.projectGlass}
+            >
               <div className={styles.projectCardInner}>
                 <div className={styles.projectTitleRow}>
                   <h3 className={styles.projectTitle}>A-IDE</h3>
@@ -85,10 +106,20 @@ export default function Projects() {
                   <a href="https://github.com/darrensh3n/-A-IDE" className={styles.link} target="_blank" rel="noopener noreferrer">GitHub</a>
                 </div>
               </div>
-            </div>
+            </GlassSurface>
           </div>
           <div className={styles.cardWrapper}>
-            <div className={styles.projectCard}>
+            <GlassSurface
+              width="100%"
+              height="auto"
+              borderRadius={16}
+              backgroundOpacity={0.22}
+              saturation={1.6}
+              blur={18}
+              displace={0.9}
+              distortionScale={-220}
+              className={styles.projectGlass}
+            >
               <div className={styles.projectCardInner}>
                 <div className={styles.projectTitleRow}>
                   <h3 className={styles.projectTitle}>Landly</h3>
@@ -109,13 +140,23 @@ export default function Projects() {
                   <a href="https://github.com/BhargavJakkaraju/Interviewer" className={styles.link} target="_blank" rel="noopener noreferrer">GitHub</a>
                 </div>
               </div>
-            </div>
+            </GlassSurface>
           </div>
         </div>
         <div className={styles.githubActivity}>
           <h3 className={styles.githubActivityTitle}>My GitHub Activity</h3>
           <div className={styles.githubChartCardWrapper}>
-            <div className={styles.githubChartCard}>
+            <GlassSurface
+              width="100%"
+              height="auto"
+              borderRadius={16}
+              backgroundOpacity={0.22}
+              saturation={1.6}
+              blur={18}
+              displace={0.9}
+              distortionScale={-220}
+              className={styles.githubGlass}
+            >
               <div className={styles.githubChartInner}>
                 {calendarMounted ? (
                   <GitHubCalendar
@@ -130,7 +171,7 @@ export default function Projects() {
                   </div>
                 )}
               </div>
-            </div>
+            </GlassSurface>
           </div>
         </div>
       </div>

@@ -38,11 +38,14 @@
   gap: 2rem;
 }
 
+.contactGlass {
+  width: 100%;
+  display: block;
+}
+
 .contactItem {
-  background-color: rgba(255, 255, 255, 0.5);
+  width: 100%;
   padding: 2rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
 }
 
 .contactLabel {

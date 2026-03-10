@@ -67,39 +67,21 @@
 
 .reachOutLink {
   display: inline-block;
-  margin-top: 0.5rem;
-  font-size: 1.85rem;
+  font-size: 1.5rem;
   font-weight: 700;
-  padding: 0.35rem 0.5rem;
+  padding: 0.45rem 0.85rem;
   text-decoration: none;
-  background: linear-gradient(90deg,
-      #2563eb,
-      #3b82f6,
-      #60a5fa,
-      #93c5fd,
-      #60a5fa,
-      #3b82f6,
-      #2563eb);
-  background-size: 200% auto;
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+  color: #2563eb;
   transition: transform 0.2s ease;
-  animation: reachOutGradient 3s linear infinite;
 }
 
 .reachOutLink:hover {
   transform: scale(1.05);
 }
 
-@keyframes reachOutGradient {
-  0% {
-    background-position: 0% center;
-  }
-
-  100% {
-    background-position: 200% center;
-  }
+.reachOutGlass {
+  display: inline-flex;
+  margin-top: 0.75rem;
 }
 
 @media (max-width: 768px) {

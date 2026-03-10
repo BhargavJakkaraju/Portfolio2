@@ -1,5 +1,6 @@
 'use client'
 
+import GlassSurface from './GlassSurface'
 import styles from './Experience.module.css'
 
 const EXPERIENCES = [
@@ -50,7 +51,17 @@ export default function Experience() {
         <div className={styles.content}>
           {EXPERIENCES.map((exp, i) => (
             <div key={i} className={styles.cardWrapper}>
-              <div className={styles.experienceCard}>
+              <GlassSurface
+                width="100%"
+                height="auto"
+                borderRadius={16}
+                backgroundOpacity={0.22}
+                saturation={1.6}
+                blur={18}
+                displace={0.9}
+                distortionScale={-220}
+                className={styles.experienceGlass}
+              >
                 <div className={styles.experienceCardInner}>
                   <div className={styles.experienceCardFront}>
                     <h3 className={styles.company}>{exp.company}</h3>
@@ -62,7 +73,7 @@ export default function Experience() {
                     <p className={styles.overlayText}>{typeof exp.overlayText === 'string' ? exp.overlayText : exp.overlayText}</p>
                   </div>
                 </div>
-              </div>
+              </GlassSurface>
             </div>
           ))}
         </div>

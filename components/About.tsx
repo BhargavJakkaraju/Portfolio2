@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import TechIconsMarquee from './TechIconsMarquee'
+import GlassSurface from './GlassSurface'
 import styles from './About.module.css'
 
 export default function About() {
@@ -15,16 +16,28 @@ export default function About() {
             <p className={styles.text}>
             I am interested in fullstack development, AI/ML Integration, Backend Systems, and Dev Tools. I’m always open to learning new things and meeting new people so feel free to reach out!
             </p>
-            <a
-              href="#contact"
-              className={styles.reachOutLink}
-              onClick={(e) => {
-                e.preventDefault()
-                document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth', block: 'start' })
-              }}
+            <GlassSurface
+              width="auto"
+              height="auto"
+              borderRadius={16}
+              backgroundOpacity={0.22}
+              saturation={1.6}
+              blur={18}
+              displace={0.9}
+              distortionScale={-220}
+              className={styles.reachOutGlass}
             >
-              Reach Out!
-            </a>
+              <a
+                href="#contact"
+                className={styles.reachOutLink}
+                onClick={(e) => {
+                  e.preventDefault()
+                  document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+                }}
+              >
+                Reach Out!
+              </a>
+            </GlassSurface>
           </div>
           <div className={styles.logoWrapper}>
             <a

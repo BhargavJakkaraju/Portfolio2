@@ -1,3 +1,4 @@
+import GlassSurface from './GlassSurface'
 import styles from './Contact.module.css'
 
 export default function Contact() {
@@ -11,24 +12,60 @@ export default function Contact() {
             or just want to say hello, feel free to reach out.
           </p>
           <div className={styles.contactInfo}>
-            <div className={styles.contactItem}>
-              <h3 className={styles.contactLabel}>Email</h3>
-              <a href="mailto:bhargav.jakkaraju@sjsu.edu" className={styles.contactLink} target="_blank" rel="noopener noreferrer">
-                Bhargav.Jakkaraju@sjsu.edu
-              </a>
-            </div>
-            <div className={styles.contactItem}>
-              <h3 className={styles.contactLabel}>LinkedIn</h3>
-              <a href="http://linkedin.com/in/bhargavjakkaraju06" className={styles.contactLink} target="_blank" rel="noopener noreferrer">
-                linkedin.com/in/bhargavjakkaraju06
-              </a>
-            </div>
-            <div className={styles.contactItem}>
-              <h3 className={styles.contactLabel}>GitHub</h3>
-              <a href="http://github.com/bhargavjakkaraju" className={styles.contactLink} target="_blank" rel="noopener noreferrer">
-                github.com/bhargavjakkaraju
-              </a>
-            </div>
+            <GlassSurface
+              width="100%"
+              height="auto"
+              borderRadius={16}
+              backgroundOpacity={0.22}
+              saturation={1.6}
+              blur={18}
+              displace={0.9}
+              distortionScale={-220}
+              className={styles.contactGlass}
+            >
+              <div className={styles.contactItem}>
+                <h3 className={styles.contactLabel}>Email</h3>
+                <a href="mailto:bhargav.jakkaraju@sjsu.edu" className={styles.contactLink} target="_blank" rel="noopener noreferrer">
+                  Bhargav.Jakkaraju@sjsu.edu
+                </a>
+              </div>
+            </GlassSurface>
+            <GlassSurface
+              width="100%"
+              height="auto"
+              borderRadius={16}
+              backgroundOpacity={0.22}
+              saturation={1.6}
+              blur={18}
+              displace={0.9}
+              distortionScale={-220}
+              className={styles.contactGlass}
+            >
+              <div className={styles.contactItem}>
+                <h3 className={styles.contactLabel}>LinkedIn</h3>
+                <a href="http://linkedin.com/in/bhargavjakkaraju06" className={styles.contactLink} target="_blank" rel="noopener noreferrer">
+                  linkedin.com/in/bhargavjakkaraju06
+                </a>
+              </div>
+            </GlassSurface>
+            <GlassSurface
+              width="100%"
+              height="auto"
+              borderRadius={16}
+              backgroundOpacity={0.22}
+              saturation={1.6}
+              blur={18}
+              displace={0.9}
+              distortionScale={-220}
+              className={styles.contactGlass}
+            >
+              <div className={styles.contactItem}>
+                <h3 className={styles.contactLabel}>GitHub</h3>
+                <a href="http://github.com/bhargavjakkaraju" className={styles.contactLink} target="_blank" rel="noopener noreferrer">
+                  github.com/bhargavjakkaraju
+                </a>
+              </div>
+            </GlassSurface>
           </div>
         </div>
       </div>
