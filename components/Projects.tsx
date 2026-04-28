@@ -110,8 +110,8 @@ export default function Projects({ isDark = false }: ProjectsProps) {
                   </button>
                 </div>
                 <div className={styles.projectLinks}>
-                  <a href="https://devpost.com/software/a-ide" className={styles.link} target="_blank" rel="noopener noreferrer">View Devpost</a>
-                  <a href="https://github.com/darrensh3n/-A-IDE" className={styles.link} target="_blank" rel="noopener noreferrer">GitHub</a>
+                  <a href="https://devpost.com/software/boom-ytjp4a" className={styles.link} target="_blank" rel="noopener noreferrer">View Devpost</a>
+                  <a href="https://github.com/BhargavJakkaraju/Bloom" className={styles.link} target="_blank" rel="noopener noreferrer">GitHub</a>
                 </div>
               </div>
             </GlassSurface>
