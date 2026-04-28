@@ -13,8 +13,8 @@ const githubCalendarTheme = {
 const LUMENTA_SHORT = 'An AI-powered video surveillance platform for real-time monitoring.'
 const LUMENTA_FULL = 'An AI-powered video surveillance platform that monitors multiple camera feeds in real time to detect and respond to security incidents, safety hazards, and notable events. It uses computer vision and AI to analyze both live and recorded video, identifying objects, people, vehicles, and activities across a wide range of environments.'
 
-const AIDE_SHORT = 'An AI-powered 3D modeling platform'
-const AIDE_FULL = 'An AI-powered 3D modeling platform that lets users create 3D assets through sketching, voice commands, and natural language descriptions instead of traditional complex software. It uses multimodal AI to interpret 2D drawings and spoken instructions, automatically generating 3D geometry, textures, and compositions while explaining the underlying process to help users learn as they build'
+const BLOOM_SHORT = 'An AI-powered 3D modeling platform that lets users create 3D assets through sketching, voice commands, and natural language descriptions instead of traditional complex software.'
+const BLOOM_FULL = 'An AI-powered 3D modeling platform that lets users create 3D assets through sketching, voice commands, and natural language descriptions instead of traditional complex software. It uses multimodal AI to interpret 2D drawings and spoken instructions, automatically generating 3D geometry, textures, and compositions while explaining the underlying process to help users learn as they build'
 
 const LANDLY_SHORT = 'A modern, full-stack web application that helps developers prepare for technical interviews using AI-generated questions and explanations.'
 const LANDLY_FULL = 'A modern, full-stack web application that helps developers prepare for technical interviews using AI-generated questions and explanations. Create personalized interview prep sessions tailored to your role, experience level, and topics you want to focus on.'
@@ -25,7 +25,7 @@ type ProjectsProps = {
 
 export default function Projects({ isDark = false }: ProjectsProps) {
   const [lumentaExpanded, setLumentaExpanded] = useState(false)
-  const [aideExpanded, setAideExpanded] = useState(false)
+  const [bloomExpanded, setBloomExpanded] = useState(false)
   const [landlyExpanded, setLandlyExpanded] = useState(false)
   const [calendarMounted, setCalendarMounted] = useState(false)
 
@@ -94,19 +94,19 @@ export default function Projects({ isDark = false }: ProjectsProps) {
                   <h3 className={styles.projectTitle}>Bloom</h3>
                   <span className={styles.awardBadge}>
                     <span className={styles.trophyIcon} aria-hidden>🏆</span>
-                    <span className={styles.goldGradient}>SJHacks: 1st Place Best 3D/CGI Tool</span>
+                    <span className={styles.goldGradient}>SJHacks: 1st Place Best use of 3D/CGI</span>
                   </span>
                 </div>
                 <div className={styles.descriptionWithReadMore}>
                   <p className={styles.projectDescription}>
-                    {aideExpanded ? AIDE_FULL : AIDE_SHORT}
+                    {bloomExpanded ? BLOOM_FULL : BLOOM_SHORT}
                   </p>
                   <button
                     type="button"
                     className={styles.readMore}
-                    onClick={() => setAideExpanded(!aideExpanded)}
+                    onClick={() => setBloomExpanded(!bloomExpanded)}
                   >
-                    {aideExpanded ? 'Read less' : 'Read more'}
+                    {bloomExpanded ? 'Read less' : 'Read more'}
                   </button>
                 </div>
                 <div className={styles.projectLinks}>
