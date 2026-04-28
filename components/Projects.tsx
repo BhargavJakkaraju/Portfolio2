@@ -13,7 +13,7 @@ const githubCalendarTheme = {
 const LUMENTA_SHORT = 'An AI-powered video surveillance platform for real-time monitoring.'
 const LUMENTA_FULL = 'An AI-powered video surveillance platform that monitors multiple camera feeds in real time to detect and respond to security incidents, safety hazards, and notable events. It uses computer vision and AI to analyze both live and recorded video, identifying objects, people, vehicles, and activities across a wide range of environments.'
 
-const BLOOM_SHORT = 'An AI-powered 3D modeling platform that lets users create 3D assets through sketching, voice commands, and natural language descriptions instead of traditional complex software.'
+const BLOOM_SHORT = 'An AI-powered 3D modeling platform'
 const BLOOM_FULL = 'An AI-powered 3D modeling platform that lets users create 3D assets through sketching, voice commands, and natural language descriptions instead of traditional complex software. It uses multimodal AI to interpret 2D drawings and spoken instructions, automatically generating 3D geometry, textures, and compositions while explaining the underlying process to help users learn as they build'
 
 const LANDLY_SHORT = 'A modern, full-stack web application that helps developers prepare for technical interviews using AI-generated questions and explanations.'
