@@ -13,8 +13,8 @@ const githubCalendarTheme = {
 const LUMENTA_SHORT = 'An AI-powered video surveillance platform for real-time monitoring.'
 const LUMENTA_FULL = 'An AI-powered video surveillance platform that monitors multiple camera feeds in real time to detect and respond to security incidents, safety hazards, and notable events. It uses computer vision and AI to analyze both live and recorded video, identifying objects, people, vehicles, and activities across a wide range of environments.'
 
-const AIDE_SHORT = 'An AI-powered water safety platform that monitors swimming areas for drowning detection.'
-const AIDE_FULL = 'An AI-powered water safety platform that continuously monitors swimming areas through live video or uploaded footage to identify signs of drowning in real time. Using advanced computer vision and motion analysis, the system detects people in the water and observes their movement patterns, looking for indicators such as limited horizontal motion, vertical stillness, erratic thrashing, or prolonged submersion.'
+const AIDE_SHORT = 'An AI-powered 3D modeling platform that lets users create 3D assets through sketching, voice commands, and natural language descriptions instead of traditional complex software. It uses multimodal AI to interpret 2D drawings and spoken instructions, automatically generating 3D geometry, textures, and compositions while explaining the underlying process to help users learn as they build'
+const AIDE_FULL = 'An AI-powered 3D modeling platform that lets users create 3D assets through sketching, voice commands, and natural language descriptions instead of traditional complex software. It uses multimodal AI to interpret 2D drawings and spoken instructions, automatically generating 3D geometry, textures, and compositions while explaining the underlying process to help users learn as they build'
 
 const LANDLY_SHORT = 'A modern, full-stack web application that helps developers prepare for technical interviews using AI-generated questions and explanations.'
 const LANDLY_FULL = 'A modern, full-stack web application that helps developers prepare for technical interviews using AI-generated questions and explanations. Create personalized interview prep sessions tailored to your role, experience level, and topics you want to focus on.'
@@ -91,7 +91,11 @@ export default function Projects({ isDark = false }: ProjectsProps) {
             >
               <div className={styles.projectCardInner}>
                 <div className={styles.projectTitleRow}>
-                  <h3 className={styles.projectTitle}>A-IDE</h3>
+                  <h3 className={styles.projectTitle}>Bloom</h3>
+                  <span className={styles.awardBadge}>
+                    <span className={styles.trophyIcon} aria-hidden>🏆</span>
+                    <span className={styles.goldGradient}>SJHacks: 1st Place Best 3D/CGI Tool</span>
+                  </span>
                 </div>
                 <div className={styles.descriptionWithReadMore}>
                   <p className={styles.projectDescription}>
