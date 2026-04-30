@@ -16,8 +16,8 @@ const LUMENTA_FULL = 'An AI-powered video surveillance platform that monitors mu
 const BLOOM_SHORT = 'An AI-powered 3D modeling platform'
 const BLOOM_FULL = 'An AI-powered 3D modeling platform that lets users create 3D assets through sketching, voice commands, and natural language descriptions instead of traditional complex software. It uses multimodal AI to interpret 2D drawings and spoken instructions, automatically generating 3D geometry, textures, and compositions while explaining the underlying process to help users learn as they build'
 
-const LANDLY_SHORT = 'A modern, full-stack web application that helps developers prepare for technical interviews using AI-generated questions and explanations.'
-const LANDLY_FULL = 'A modern, full-stack web application that helps developers prepare for technical interviews using AI-generated questions and explanations. Create personalized interview prep sessions tailored to your role, experience level, and topics you want to focus on.'
+const AIDE_SHORT = 'An AI-powered water safety platform.'
+const AIDE_FULL = 'An AI-powered water safety platform that monitors swimming areas through live or uploaded video to detect potential drowning in real time. It uses computer vision and motion analysis to identify distress patterns such as limited horizontal movement, vertical stillness, erratic thrashing, and prolonged submersion.'
 
 type ProjectsProps = {
   isDark?: boolean
@@ -26,7 +26,7 @@ type ProjectsProps = {
 export default function Projects({ isDark = false }: ProjectsProps) {
   const [lumentaExpanded, setLumentaExpanded] = useState(false)
   const [bloomExpanded, setBloomExpanded] = useState(false)
-  const [landlyExpanded, setLandlyExpanded] = useState(false)
+  const [aideExpanded, setAideExpanded] = useState(false)
   const [calendarMounted, setCalendarMounted] = useState(false)
 
   useEffect(() => {
@@ -130,22 +130,23 @@ export default function Projects({ isDark = false }: ProjectsProps) {
             >
               <div className={styles.projectCardInner}>
                 <div className={styles.projectTitleRow}>
-                  <h3 className={styles.projectTitle}>Landly</h3>
+                  <h3 className={styles.projectTitle}>A-IDE</h3>
                 </div>
                 <div className={styles.descriptionWithReadMore}>
                   <p className={styles.projectDescription}>
-                    {landlyExpanded ? LANDLY_FULL : LANDLY_SHORT}
+                    {aideExpanded ? AIDE_FULL : AIDE_SHORT}
                   </p>
                   <button
                     type="button"
                     className={styles.readMore}
-                    onClick={() => setLandlyExpanded(!landlyExpanded)}
+                    onClick={() => setAideExpanded(!aideExpanded)}
                   >
-                    {landlyExpanded ? 'Read less' : 'Read more'}
+                    {aideExpanded ? 'Read less' : 'Read more'}
                   </button>
                 </div>
                 <div className={styles.projectLinks}>
-                  <a href="https://github.com/BhargavJakkaraju/Interviewer" className={styles.link} target="_blank" rel="noopener noreferrer">GitHub</a>
+                  <a href="https://devpost.com/software/a-ide" className={styles.link} target="_blank" rel="noopener noreferrer">View Devpost</a>
+                  <a href="https://github.com/darrensh3n/-A-IDE" className={styles.link} target="_blank" rel="noopener noreferrer">GitHub</a>
                 </div>
               </div>
             </GlassSurface>
